@@ -107,13 +107,15 @@
         <!--.wrap = container (width: 90%) -->
         <div class="wrap aligncenter">
           <h1>
-            <strong> CSS transitions</strong>
+            <strong> CSS
+              <code>animation</code>
+            </strong>
           </h1>
-          <p class="text-intro">Week 4
+          <p class="text-intro">Week 5
             <br>COMP 2105
           </p>
           <p>
-            <a href="https://github.com/avcoder/comp2105-week04" class="button zoomIn" title="Download WebSlides for free">
+            <a href="https://github.com/avcoder/comp2105-week05" class="button zoomIn" title="Download WebSlides for free">
               <svg class="fa-github">
                 <use xlink:href="#fa-github"></use>
               </svg>
@@ -134,22 +136,17 @@
           <div class="bg-white shadow">
             <ul class="flexblock reasons">
               <li>
-                <h2>Target what property?</h2>
-                <p>Define precisely what visual properties will be transitioned.</p>
+                <h2>Syntax</h2>
+                <p>Configure a CSS animation and the various parameters that are needed</p>
               </li>
               <li>
-                <h2>Simple transition</h2>
-                <p>Configure a simple CSS transition for an HTML element.</p>
+                <h2>Keyframes</h2>
+                <p>Define a series of keyframes that spell out changes to an element's visual properties</p>
               </li>
               <li>
-                <h2>Multiple transitions
+                <h2>Design
                 </h2>
-                <p>Set up multiple properties to be transitioned using CSS shorthand syntax.</p>
-              </li>
-              <li>
-                <h2>Timings</h2>
-                <p>Control animation timing for transitioned properties.
-                </p>
+                <p>Design a keyframe-based animation that incorporates a variety of CSS properties</p>
               </li>
             </ul>
           </div>
@@ -162,18 +159,160 @@
       <section>
         <!--.wrap = container (width: 90%) -->
         <div class="wrap aligncenter">
-          <h2>CSS Transitions</h2>
-          <p class="text-intro">A transition describes
-            <i>
-              <strong>how</strong>
-            </i>
-            a property should display change when given a different value.
-          </p>
-
+          <h2>CSS
+            <code>animation</code>
+          </h2>
+          <a href="https://codepen.io/avcoder/pen/dJbQEX">
+            <img src="./static/images/animation.png" alt="sample code using animation and keyframes" style="width: 500px;">
+          </a>
+          <ul style="list-style:none;">
+            <li>1. Define the animation using keyframes</li>
+            <li>2. Assign it to a specific element (or elements)</li>
+          </ul>
         </div>
         <!-- .end .wrap -->
       </section>
 
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap aligncenter">
+          <h2>1. Define the animation using
+            <code>@keyframes</code>
+          </h2>
+          <p class="text-intro">Keyframes are a list describing what should happen over the course of the animation</p>
+          <pre class="size-50 wrap bg-apple"><h3>
+            @keyframes name-this {
+
+            }</h3>
+          </pre>
+          <p>It's important to name your keyframe animations, otherwise you can never use it.</p>
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+
+            <div class="column">
+              <p data-height="500" data-theme-id="0" data-slug-hash="papvLL" data-default-tab="css,result" data-user="avcoder" data-embed-version="2"
+                data-pen-title="animation - from to" class="codepen">See the Pen
+                <a href="https://codepen.io/avcoder/pen/papvLL/">animation - from to</a> by A.V. (
+                <a href="https://codepen.io/avcoder">@avcoder</a>) on
+                <a href="https://codepen.io">CodePen</a>.</p>
+              <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <h3>
+                1a) Define
+                <code>@keyframes</code> structure with name
+              </h3>
+              <pre>
+                @keyframes insert-name {
+
+                }
+              </pre>
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+
+            <div class="column">
+              <p data-height="500" data-theme-id="0" data-slug-hash="papvLL" data-default-tab="css,result" data-user="avcoder" data-embed-version="2"
+                data-pen-title="animation - from to" class="codepen">See the Pen
+                <a href="https://codepen.io/avcoder/pen/papvLL/">animation - from to</a> by A.V. (
+                <a href="https://codepen.io/avcoder">@avcoder</a>) on
+                <a href="https://codepen.io">CodePen</a>.</p>
+              <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <h3>
+                1b) Declare visual changes via
+                <br/>
+                <code>from to</code> OR
+                <code>0% 100%</code>
+              </h3>
+              <pre>
+                  @keyframes bobble {
+                    from { transform: translateY(0); }
+                    to { transform: translateY(100px); }
+                  }
+                </pre>
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap aligncenter">
+          <h2>2. Assign animation name to a specific element(s)</h2>
+
+          <pre class="size-50 wrap bg-apple"><h3>
+          #elementID {
+               animation: bobble 1s;
+          }    
+          </h3>
+            </pre>
+          <p>Also include animation-duration</p>
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+
+            <div class="column">
+              <p data-height="500" data-theme-id="0" data-slug-hash="papvLL" data-default-tab="css,result" data-user="avcoder" data-embed-version="2"
+                data-pen-title="animation - from to" class="codepen">See the Pen
+                <a href="https://codepen.io/avcoder/pen/papvLL/">animation - from to</a> by A.V. (
+                <a href="https://codepen.io/avcoder">@avcoder</a>) on
+                <a href="https://codepen.io">CodePen</a>.</p>
+              <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <h3>
+                2. Assign it to a specific element using keyword
+                <code>animation</code>
+              </h3>
+              <pre>
+                    @keyframes bobble {
+                      from { transform: translateY(0); }
+                      to { transform: translateY(100px); }
+                    }
+
+                    #hexagon {
+                      animation: bobble 1s;
+                    }
+                  </pre>
+              <p>Exercise: Add a new h1 element 'Hello world' then apply bobble to it using 2s</p>
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
 
 
 
@@ -187,8 +326,8 @@
 
         </div>
         <ol>
-          <li>lynda.com - Motion Design with CSS with Rachel Nabors</li>
           <li>lynda.com - CSS Animations with Val Head</li>
+          <li>lynda.com - Motion Design with CSS with Rachel Nabors</li>
           <li></li>
           <li></li>
           <li></li>
