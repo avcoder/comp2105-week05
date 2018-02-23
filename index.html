@@ -155,6 +155,24 @@
         <!-- .end .wrap -->
       </section>
 
+      <section class="bg-apple">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <blockquote class="text-quote">
+            <p>Transitions are a like a saw; animations are like a power saw.</p>
+            <p>An animation can act like a transition, but typically animations has multiple steps...and is better in coordinating
+              multiple events.</p>
+            <p>
+              <cite>
+                <img class="avatar-56" src="https://pbs.twimg.com/profile_images/856249108885110784/97cssCek_bigger.jpg" alt="Avatar">Sarah Drasner.
+                <br/>
+                <a href="http://www.fullstackradio.com/82">Animating the Web with CSS and JavaScript (Full Stack Radio)</a>
+              </cite>
+            </p>
+          </blockquote>
+        </div>
+        <!-- .end .wrap -->
+      </section>
 
       <section>
         <!--.wrap = container (width: 90%) -->
@@ -179,7 +197,7 @@
         <!--.wrap = container (width: 90%) -->
         <div class="wrap aligncenter">
           <h2>1. Define the animation using
-            <code>@keyframes</code>
+            <code>@keyframes</code> with a name
           </h2>
           <p class="text-intro">Keyframes are a list describing what should happen over the course of the animation</p>
           <pre class="size-50 wrap bg-apple"><h3>
@@ -187,7 +205,7 @@
 
             }</h3>
           </pre>
-          <p>It's important to name your keyframe animations, otherwise you can never use it.</p>
+          <p>It's important to name your keyframe block, otherwise you can never use it.</p>
         </div>
         <!-- .end .wrap -->
       </section>
@@ -368,8 +386,8 @@
         <!--.wrap = container (width: 90%) -->
         <div class="wrap aligncenter">
           <h2>animation-iteration-count</h2>
-          <p>Optional property that is the number of animation cycles</p>
-          <p>Default is set to 1.
+          <p>Optional property that is the number of times you want to go from 0% to 100%</p>
+          <p>Default is set to 1; use infinite to never stop.
             <a href="https://codepen.io/avcoder/pen/papvLL">Try 2, 2.5, infinite</a>
           </p>
         </div>
@@ -380,8 +398,8 @@
         <!--.wrap = container (width: 90%) -->
         <div class="wrap aligncenter">
           <h2>animation-fill-mode</h2>
-          <p class="wrap size-50">Optional property that defines what to do outside of the animation duration. For example, you can set the last
-            state of the animation to remain on screen.</p>
+          <p class="wrap size-50">Optional property that can retain either its 0% property before the animation starts playing, or retain its 100%
+            property after the animation finishes playing, or both.</p>
           <p>Default is set to none.
             <a href="https://codepen.io/avcoder/pen/papvLL">Try forwards, backwards, both</a>
           </p>
@@ -404,6 +422,21 @@
           <p class="wrap size-50">lets us animate what order our keyframes are executed in. You need more than 1 iteration to see effect.</p>
           <p>Default is set to normal.
             <a href="https://codepen.io/avcoder/pen/papvLL">Try reverse, alternate, alternate-reverse</a>
+          </p>
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap aligncenter">
+          <h2>animation-play-state</h2>
+          <p class="wrap size-50">Defaults to
+            <code>running</code> but can be set to
+            <code>paused</code>
+          </p>
+          <p>Default is set to running.
+            <a href="https://codepen.io/avcoder/pen/papvLL">Try paused</a>
           </p>
         </div>
         <!-- .end .wrap -->
@@ -534,6 +567,118 @@
         <!-- .end .wrap -->
       </section>
 
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+
+            <div class="column">
+              <p data-height="500" data-theme-id="0" data-slug-hash="NyMyYj" data-default-tab="css,result" data-user="avcoder" data-embed-version="2"
+                data-pen-title="ripple" class="codepen">See the Pen
+                <a href="https://codepen.io/avcoder/pen/NyMyYj/">ripple</a> by A.V. (
+                <a href="https://codepen.io/avcoder">@avcoder</a>) on
+                <a href="https://codepen.io">CodePen</a>.</p>
+              <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <h3>
+                Challenge
+              </h3>
+              <p class="text-intro">Emulate Material Design's ripple effect.
+              </p>
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+
+            <div class="column">
+              <p data-height="500" data-theme-id="0" data-slug-hash="qxyZOx" data-default-tab="css,result" data-user="avcoder" data-embed-version="2"
+                data-pen-title="animation-play-state sticker" class="codepen">See the Pen
+                <a href="https://codepen.io/avcoder/pen/qxyZOx/">animation-play-state sticker</a> by A.V. (
+                <a href="https://codepen.io/avcoder">@avcoder</a>) on
+                <a href="https://codepen.io">CodePen</a>.</p>
+              <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <h3>
+                Challenge - animation-play-state
+              </h3>
+              <p class="text-intro">Make image spin upon hover
+              </p>
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+
+            <div class="column">
+              <p data-height="500" data-theme-id="0" data-slug-hash="rJrxbW" data-default-tab="css,result" data-user="avcoder" data-embed-version="2"
+                data-pen-title="modal" class="codepen">See the Pen
+                <a href="https://codepen.io/avcoder/pen/rJrxbW/">modal</a> by A.V. (
+                <a href="https://codepen.io/avcoder">@avcoder</a>) on
+                <a href="https://codepen.io">CodePen</a>.</p>
+              <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <h3>
+                Challenge - multiple animations
+              </h3>
+              <p class="text-intro">Make the modal slideIn from the bottom and fadeIn
+              </p>
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+
+            <div class="column">
+              <p data-height="500" data-theme-id="0" data-slug-hash="mXjPWg" data-default-tab="css,result" data-user="avcoder" data-embed-version="2"
+                data-pen-title="animation-delay + 3D " class="codepen">See the Pen
+                <a href="https://codepen.io/avcoder/pen/mXjPWg/">animation-delay + 3D </a> by A.V. (
+                <a href="https://codepen.io/avcoder">@avcoder</a>) on
+                <a href="https://codepen.io">CodePen</a>.</p>
+              <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <h3>
+                Challenge - 3D + animation-delay
+              </h3>
+              <p class="text-intro">Make letters rotate one after another
+              </p>
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
 
 
       <section>
