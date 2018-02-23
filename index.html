@@ -108,7 +108,7 @@
         <div class="wrap aligncenter">
           <h1>
             <strong>
-              <code>animation with @keyframes</code>
+              CSS @keyframes animation
             </strong>
           </h1>
           <p class="text-intro">Week 5
@@ -177,10 +177,26 @@
       <section>
         <!--.wrap = container (width: 90%) -->
         <div class="wrap aligncenter">
-          <h2>CSS
-            <code>animation</code>
+          <h2>Why keyframe animation?
           </h2>
-          <p>Why do we need this new keyword? What limitations does transition have?</p>
+          <br/>
+          <ul class="text-intro" style="list-style:none;">
+            <li>Can repeat x times, or loop infinitely</li>
+            <li>Self starting: Doesn't require trigger like transition</li>
+            <li>Alternating: Can make it go from beginning to end or vice versa</li>
+            <li>Grouping: Each animation can change multiple properties</li>
+          </ul>
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap aligncenter">
+          <h2>
+            <code>@keyframes animation</code>
+          </h2>
           <a href="https://codepen.io/avcoder/pen/dJbQEX">
             <img src="./static/images/animation.png" alt="sample code using animation and keyframes" style="width: 500px;">
           </a>
@@ -200,6 +216,7 @@
             <code>@keyframes</code> with a name
           </h2>
           <p class="text-intro">Keyframes are a list describing what should happen over the course of the animation</p>
+          <p class="text-intro">animation-name specifies the name of the @keyframes</p>
           <pre class="size-50 wrap bg-apple"><h3>
             @keyframes name-this {
 
@@ -386,7 +403,7 @@
         <!--.wrap = container (width: 90%) -->
         <div class="wrap aligncenter">
           <h2>animation-iteration-count</h2>
-          <p>Optional property that is the number of times you want to go from 0% to 100%</p>
+          <p>Optional property that configures the number of times the animation should repeat.</p>
           <p>Default is set to 1; use infinite to never stop.
             <a href="https://codepen.io/avcoder/pen/papvLL">Try 2, 2.5, infinite</a>
           </p>
@@ -398,8 +415,8 @@
         <!--.wrap = container (width: 90%) -->
         <div class="wrap aligncenter">
           <h2>animation-fill-mode</h2>
-          <p class="wrap size-50">Optional property that can retain either its 0% property before the animation starts playing, or retain its 100%
-            property after the animation finishes playing, or both.</p>
+          <p class="wrap size-50">Optional property that configures what values are applied by the animation before and after it is executing. (Does
+            it retain its 0%/100% property before/after animation starts/ends?)</p>
           <p>Default is set to none.
             <a href="https://codepen.io/avcoder/pen/papvLL">Try forwards, backwards, both</a>
           </p>
@@ -419,7 +436,8 @@
         <!--.wrap = container (width: 90%) -->
         <div class="wrap aligncenter">
           <h2>animation-direction</h2>
-          <p class="wrap size-50">lets us animate what order our keyframes are executed in. You need more than 1 iteration to see effect.</p>
+          <p class="wrap size-50">Configures whether or not the animation should alternate direction on each run through the sequence or reset to
+            the start point and repeat itself. You need more than 1 iteration to see effect.</p>
           <p>Default is set to normal.
             <a href="https://codepen.io/avcoder/pen/papvLL">Try reverse, alternate, alternate-reverse</a>
           </p>
