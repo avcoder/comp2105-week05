@@ -65,3 +65,9 @@
 
 - 3 mins: recreate this fade-in and fade-out of the intro to starwars (play youtube clip)
 - code it
+
+# shorthand animation
+
+- just like transition from last week, the short hand is put everything in one line
+- order does not matter, except one -- which order matters (just like transition)?
+- (use short hand notation in previous codepen example)
