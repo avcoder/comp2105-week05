@@ -61,13 +61,27 @@
 - notice these are same 4 props as transition - nothing new - same as last week's material
 - code Step 3, and 4
 
+# shorthand animation
+
+- just like transition from last week, the short hand is put everything in one line
+- order does not matter, except one -- which order matters (just like transition)?
+- Do 1 min codepen exercise
+
 # Challenge starwars codepen
 
 - 3 mins: recreate this fade-in and fade-out of the intro to starwars (play youtube clip)
 - code it
 
-# shorthand animation
+# transition vs animation
 
-- just like transition from last week, the short hand is put everything in one line
-- order does not matter, except one -- which order matters (just like transition)?
-- (use short hand notation in previous codepen example)
+- analogy of plain saw vs powersaw - so far we've seen that animation has breakpoints
+
+# but wait.. more
+
+- but it has more props for animation, here's the answer
+- iteration-count : can define how many times does it repeat? By default it repeats 1 time, but can say 2, 3, infinite
+- another one is called fill-mode, can set it to forwards, backwards, both or none.
+
+# animation-iteration-count
+
+- read it
