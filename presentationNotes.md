@@ -85,3 +85,7 @@
 # animation-iteration-count
 
 - read it
+- code it by adding animation-iteration-count: 2
+- try 3
+- try infinite
+- try 1.5
