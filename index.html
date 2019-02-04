@@ -282,6 +282,7 @@
               </h3>
               <pre><h3>
               @keyframes launch {
+                0% { transform: translateY(0px); }
                 100% { transform: translateY(-300px); }
               }
                     </h3></pre>
@@ -304,7 +305,7 @@
 
             <div class="column">
               <h3>
-                1c). Assign it to a specific element using keyword
+                2). Assign it to a specific element using keyword
                 <code>animation</code>
               </h3>
               <pre><h4>
@@ -314,9 +315,11 @@
 
                     #rocket {
                       animation-name: launch;
-                      animation-duration: 2s;
+                      animation-duration: 2000ms;
                       animation-timing-function: ease-out;
+                      animation-delay: 0s;
                     }
+                    // Could combine above using shorthand 'animation:'
                   </h4></pre>
             </div>
             <!-- .end .column -->
@@ -327,7 +330,7 @@
       </section>
 
 
-      <section>
+      <section class="bg-apple">
         <!--.wrap = container (width: 90%) -->
         <div class="wrap">
           <div class="grid vertical-align">
@@ -357,6 +360,18 @@
         <!-- .end .wrap -->
       </section>
 
+      <section class="bg-apple">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap aligncenter">
+          <code>
+                <h2>animation: bobble 2s ease-in .1s</h2>
+              </code>
+          <p>Does it have to be in this order?
+            <a href="https://codepen.io/avcoder/pen/papvLL?editors=0100">Try using short hand notation</a>
+          </p>
+        </div>
+        <!-- .end .wrap -->
+      </section>      
 
       <section class="bg-apple">
         <!--.wrap = container (width: 90%) -->
@@ -382,18 +397,6 @@
         <!-- .end .wrap -->
       </section>
 
-      <section class="bg-apple">
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap aligncenter">
-          <code>
-                <h2>animation: bobble 2s ease-in .1s</h2>
-              </code>
-          <p>Does it have to be in this order?
-            <a href="https://codepen.io/avcoder/pen/papvLL?editors=0100">Try using short hand notation</a>
-          </p>
-        </div>
-        <!-- .end .wrap -->
-      </section>
 
       <section class="bg-apple">
         <!--.wrap = container (width: 90%) -->

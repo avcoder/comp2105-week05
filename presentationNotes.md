@@ -45,9 +45,23 @@
 
 - now you want to declare the visual changes
 - erase all the transform/transition code
-- code Step 1
+- code Step 1 - btw, could also say from, to which is good for simple 2 states
+- but most people use the percentages because you can say 25% or 50%
 - just because I made a keyframe it won't work unless you use/assign it.
+
+# 2) codepen
+
+- So let's assign it by adding our 'launch' name -- is it working now? No because at minimum you need a duration
+- code duration - now it should play
+- fyi: can change
 - so we just recreated it using animation -- what's the big deal? Assign break points
 - code Step 2
+- you can also have animation-timing-function (try a cubic-bezier)
+- you can also have a delay (try a 1s delay)
+- notice these are same 4 props as transition - nothing new - same as last week's material
+- code Step 3, and 4
 
-# 1c) codepen
+# Challenge starwars codepen
+
+- 3 mins: recreate this fade-in and fade-out of the intro to starwars (play youtube clip)
+- code it
