@@ -73,7 +73,7 @@
       </p>
       <ul>
         <li class="github">
-          <a rel="external" href="https://github.com/avcoder/comp2105-week04" title="Github">
+          <a rel="external" href="https://github.com/avcoder/comp2105-week05" title="Github">
             <svg class="fa-github">
               <use xlink:href="#fa-github"></use>
             </svg>
@@ -103,7 +103,8 @@
 
       <section>
         <!-- Credit: image from unsplash.com -->
-        <span class="background" style="background-image:url('./static/images/splash.jpg'); filter: opacity(.3);"></span>
+        <!-- Credit: image from unsplash.com -->
+        <span class="background" style="background-image:url('./static/images/animationmap2.jpg'); filter: opacity(.3);"></span>
         <!--.wrap = container (width: 90%) -->
         <div class="wrap aligncenter">
           <h1>
@@ -126,6 +127,15 @@
         <!-- .end .wrap -->
       </section>
 
+      <section class="bg-apple">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap aligncenter">
+          <img src="./static/images/animationmap.jpg" alt="The world of web animation by Val head" style="width: 80%">
+          <p><a href="https://noti.st/valhead/L9LBoQ/choose-your-web-animation-adventure">https://noti.st/valhead/L9LBoQ/choose-your-web-animation-adventure</a></p>
+        </div>
+        <!-- .end .wrap -->
+      </section>            
+
       <section>
         <!--.wrap = container (width: 90%) -->
         <div class="wrap size-50 aligncenter">
@@ -146,7 +156,7 @@
               <li>
                 <h2>Design
                 </h2>
-                <p>Design a keyframe-based animation that incorporates a variety of CSS properties</p>
+                <p>Design keyframe-based animations that incorporates a variety of CSS properties</p>
               </li>
             </ul>
           </div>
@@ -164,9 +174,9 @@
               multiple events.</p>
             <p>
               <cite>
-                <img class="avatar-56" src="https://pbs.twimg.com/profile_images/856249108885110784/97cssCek_bigger.jpg" alt="Avatar">Sarah Drasner.
+                <img class="avatar-56" src="https://pbs.twimg.com/profile_images/1039352369232789504/M7tgq-c8_400x400.jpg" alt="Avatar">Sarah Drasner.
                 <br/>
-                <a href="http://www.fullstackradio.com/82">Animating the Web with CSS and JavaScript (Full Stack Radio)</a>
+                <a href="http://www.fullstackradio.com/82">Animating the Web with CSS and JavaScript</a>
               </cite>
             </p>
           </blockquote>
@@ -197,9 +207,9 @@
           <h2>
             <code>@keyframes animation</code>
           </h2>
-          <a href="https://codepen.io/avcoder/pen/dJbQEX">
-            <img src="./static/images/animation.png" alt="sample code using animation and keyframes" style="width: 500px;">
-          </a>
+          
+          <img src="./static/images/animation.png" alt="sample code using animation and keyframes" style="width: 500px;">
+          
           <ul style="list-style:none;">
             <li>1. Define the animation using keyframes</li>
             <li>2. Assign it to a specific element (or elements)</li>
@@ -215,7 +225,7 @@
           <h2>1. Define the animation using
             <code>@keyframes</code> with a name
           </h2>
-          <p class="text-intro">Keyframes are a list describing what should happen over the course of the animation</p>
+          <p class="text-intro">Keyframes are a list of breakpoints describing what should happen over the course of the animation</p>
           <p class="text-intro">animation-name specifies the name of the @keyframes</p>
           <pre class="size-50 wrap bg-apple"><h3>
             @keyframes name-this {
@@ -234,11 +244,11 @@
           <div class="grid vertical-align">
 
             <div class="column">
-              <p data-height="500" data-theme-id="0" data-slug-hash="papvLL" data-default-tab="css,result" data-user="avcoder" data-embed-version="2"
-                data-pen-title="animation - from to" class="codepen">See the Pen
-                <a href="https://codepen.io/avcoder/pen/papvLL/">animation - from to</a> by A.V. (
-                <a href="https://codepen.io/avcoder">@avcoder</a>) on
-                <a href="https://codepen.io">CodePen</a>.</p>
+              <p class="codepen" data-height="500" data-theme-id="0" data-default-tab="css,result" data-user="avcoder" data-slug-hash="yZXmKV" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="css @keyframes animation">
+                <span>See the Pen <a href="https://codepen.io/avcoder/pen/yZXmKV/">
+                css @keyframes animation</a> by A.V. (<a href="https://codepen.io/avcoder">@avcoder</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+              </p>
               <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
             </div>
             <!-- .end .column -->
@@ -265,27 +275,16 @@
         <!--.wrap = container (width: 90%) -->
         <div class="wrap">
           <div class="grid vertical-align">
-
-            <div class="column">
-              <p data-height="500" data-theme-id="0" data-slug-hash="papvLL" data-default-tab="css,result" data-user="avcoder" data-embed-version="2"
-                data-pen-title="animation - from to" class="codepen">See the Pen
-                <a href="https://codepen.io/avcoder/pen/papvLL/">animation - from to</a> by A.V. (
-                <a href="https://codepen.io/avcoder">@avcoder</a>) on
-                <a href="https://codepen.io">CodePen</a>.</p>
-              <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-            </div>
-            <!-- .end .column -->
             <div class="column">
               <h3>
                 1b) Declare visual changes via
                 <code>0% 100%</code>
               </h3>
-              <pre>
-                      @keyframes bobble {
-                        0% { transform: translateY(50px); }
-                        100% { transform: translateY(100px); }
-                      }
-                    </pre>
+              <pre><h3>
+              @keyframes launch {
+                100% { transform: translateY(-300px); }
+              }
+                    </h3></pre>
               <p>Can also use keywords
                 <code>from { ... } to { ... }</code>
               </p>
@@ -304,35 +303,21 @@
           <div class="grid vertical-align">
 
             <div class="column">
-              <p data-height="500" data-theme-id="0" data-slug-hash="papvLL" data-default-tab="css,result" data-user="avcoder" data-embed-version="2"
-                data-pen-title="animation - from to" class="codepen">See the Pen
-                <a href="https://codepen.io/avcoder/pen/papvLL/">animation - from to</a> by A.V. (
-                <a href="https://codepen.io/avcoder">@avcoder</a>) on
-                <a href="https://codepen.io">CodePen</a>.</p>
-              <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-            </div>
-            <!-- .end .column -->
-            <div class="column">
               <h3>
-                2. Assign it to a specific element using keyword
+                1c). Assign it to a specific element using keyword
                 <code>animation</code>
               </h3>
-              <pre>
-                    @keyframes bobble { 
+              <pre><h4>
+                    @keyframes launch { 
                       ...
                     }
 
-                    #hexagon {
-                      animation-name: bobble;
+                    #rocket {
+                      animation-name: launch;
                       animation-duration: 2s;
-                      animation-timing-function: ease-in;
-                      animation-delay: 1s;
+                      animation-timing-function: ease-out;
                     }
-                  </pre>
-              <p>Exercise: Add a new h1 element 'Hello world' then apply bobble to it using 2s</p>
-              <p>Question: Why not just animate
-                <code>top left</code> instead of using
-                <code>transform: translateY()</code>?</p>
+                  </h4></pre>
             </div>
             <!-- .end .column -->
           </div>
