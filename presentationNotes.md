@@ -38,6 +38,7 @@
 # 1a) codepen
 
 - All we're going to do is define the keyframes by giving it a name
+- fyi - order doesn't matter, can place keyframes before or after element that you're targeting
 - Review last week's class of transforms and transitions - make rocket move using transform/transition
 - Now, let's recreate that exact thing using animation
 - First step - define @keyframes (plural 's') and give it a name
@@ -149,3 +150,32 @@
   }
 }
 ```
+
+# animation-direction
+
+- read it
+- default is normal
+- try reverse, alternate (starts from begin to end to beginning), alternate-reverse (opposite of alternate)
+- those are your four values
+
+```css
+animation: bobble 3s ease-out 2 1s both;
+animation-direction: alternate-reverse;
+```
+
+# 5 min Challenge animation-direction codepen
+
+```css
+@keyframes switchIt {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(200px);
+  }
+}
+
+animation: switchIt 1s forwards reverse;
+```
+
+# animation-play-state
