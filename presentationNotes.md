@@ -89,3 +89,17 @@
 - try 3
 - try infinite
 - try 1.5
+
+# challenge codepen iphone wobble
+
+- your challenge is to make it jiggle as if you were rearranging the icons on the iPhone
+- so let's define the keyframe -- what property will make it look like it's jiggling? rotate
+- 0% { transform: rotate(3deg) }
+- 100% { transform: rotate(-2.5deg)}
+- Do challenge 3 - explain event propagation
+
+# animation-fill-mode
+
+- read it
+- so the question is, do you want the animation do retain its 0% value before the animation starts?
+- or do you want the animation to retain its 100% value, otherwise it'll go reset back to the beginning when animation ends
