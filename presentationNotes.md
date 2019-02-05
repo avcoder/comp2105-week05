@@ -91,7 +91,7 @@
 - try infinite
 - try 1.5
 
-# challenge codepen iphone wobble
+# 5 min challenge codepen iphone wobble
 
 - your challenge is to make it jiggle as if you were rearranging the icons on the iPhone
 - so let's define the keyframe -- what property will make it look like it's jiggling? rotate
@@ -117,3 +117,35 @@
 - read it
 - or you could have the keyword 'both'
 - so that's nice if you don't want your animations to jerk around
+
+# 5 min Challenge clouds codepen
+
+- read it
+- what do we want to happen with the cloud? Where should the cloud start?
+- -300px to left so we don't even see it
+- let's see what happens if we apply drift to both clouds
+- now apply a delay to 2nd cloud - what happens? the cloud appears first, then it starts animation - problem!
+- use 'backwards'
+
+```css
+.fcloud01 {
+  top: 100px;
+  z-index: 100;
+  animation: drift 30s linear;
+}
+
+.fcloud02 {
+  top: 240px;
+  z-index: 200;
+  animation: drift 30s 5s backwards linear;
+}
+
+@keyframes drift {
+  0% {
+    transform: translateX(-300px);
+  }
+  100% {
+    transform: translateX(1400px);
+  }
+}
+```
