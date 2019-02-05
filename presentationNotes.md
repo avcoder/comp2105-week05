@@ -23,6 +23,7 @@
 # Why keyframes?
 
 - read it
+- another analogy is like a CD/DVD player, repeat
 
 # @keyframes animation
 
@@ -103,3 +104,16 @@
 - read it
 - so the question is, do you want the animation do retain its 0% value before the animation starts?
 - or do you want the animation to retain its 100% value, otherwise it'll go reset back to the beginning when animation ends
+- change 0% value to 100px instead of 0px
+- by default set to none
+- notice how before animation begins, it starts at very top, then when animation starts it's at 100px down
+- backwards: now even before animation begins, it no longer starts at top, it starts at 0% value
+- but notice, when aniation ended it reset back to the top
+- that's the purpose of the other keyword: forwards
+- forwards: retain your 100% value, so once it finishes animating it stays there
+
+# backwards vs forwards
+
+- read it
+- or you could have the keyword 'both'
+- so that's nice if you don't want your animations to jerk around
