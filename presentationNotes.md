@@ -178,4 +178,67 @@ animation-direction: alternate-reverse;
 animation: switchIt 1s forwards reverse;
 ```
 
+- paused will make animation stop, until (through JS), you change it to running
+- let's make it run via JS
+
 # animation-play-state
+
+```css
+animation-play-state: paused;
+```
+
+```js
+const happy = document.querySelector("#hexagon");
+happy.addEventListener("click", () => {
+  happy.style.setProperty("animation-play-state", "running");
+});
+```
+
+# 5 min challenge animation-play-state codepen
+
+- can say paused in 1 of 2 places
+- here's a shortcut, if you notice your 0% does nothing, you can delete it -- ones less line of code
+
+```css
+/* STEP 2) Apply spin keyframes below using 10s linear infinite. Sticker should spin now */
+animation: spin 10s linear infinite;
+
+/* STEP 3) Set by default animation-play-state to paused */
+   animation-play-state: paused;
+}
+
+/* STEP 4) On .sticker:hover, set animation-play-state to running */
+ .sticker:hover {
+   animation-play-state: running;
+ }
+/* STEP 1) Create a keyframes 'spin' so that sticker rotates 1 turn */
+ @keyframes spin {
+   100% { transform: rotate(1turn); }
+ }
+```
+
+```js
+const spinner = document.querySelector("img");
+spinner.addEventListener("click", () => {
+  spinner.style.setProperty("animation-play-state", "running");
+});
+```
+
+# Break
+
+# 5 min challenge starwars
+
+```css
+@keyframes logo {
+  0% {
+    transform: scale(5);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+}
+
+animation: logo 10s linear;
+```
