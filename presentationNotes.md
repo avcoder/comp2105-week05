@@ -242,3 +242,75 @@ spinner.addEventListener("click", () => {
 
 animation: logo 10s linear;
 ```
+
+# multiple keyframe sequences per animation
+
+```css
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+animation: square 3s infinite, fadeInOut 2s infinite;
+```
+
+# challenge multiple animations
+
+- 'repetition is the mother of all learning'
+
+```css
+@keyframes slideIn {
+  0% {
+    transform: translateY(300px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+section {
+  animation: slideIn 1s, fadeIn 1s;
+}
+```
+
+-if you want a bounce effect you could say:
+
+```css
+60% {
+  transform: translateY(-50px);
+}
+80% {
+  transform: translateY(10px);
+}
+```
+
+- additionally can also add multiple changes per breakpoint:
+
+```css
+0% {
+  transform: translateY(300px);
+  animation-timing-function: ease-in;
+}
+```
+
+# Material design
+
+- show it
+
+# 3D + animation-delay
+
+- show it
